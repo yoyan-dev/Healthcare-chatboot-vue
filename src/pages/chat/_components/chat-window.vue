@@ -25,7 +25,7 @@ console.log(props)
   <div class="flex">
     <div class="flex-1">
       <div class="h-full rounded-md space-y-2 ">
-        <div class=" w-full overflow-y-auto py-4 px-8 bg-white/10 min-h-[80vh] max-h-[80vh]">
+        <div class=" w-full overflow-y-auto py-4 px-8 bg-white rounded border border-gray-200 min-h-[80vh] max-h-[80vh]">
           <ChatBubble v-for=" msg in props.messages" :key="msg.id" :message="msg"/>
         </div>
       </div>
